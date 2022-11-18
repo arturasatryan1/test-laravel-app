@@ -1,0 +1,16 @@
+#numberCircle {
+    width: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    border: 2px solid #666;
+}
+
+.win {
+    background: rgba(0, 255, 0, .2);
+}
+
+.lose {
+    background: rgba(255, 0, 0, .2);
+}
