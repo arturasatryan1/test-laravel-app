@@ -33,13 +33,12 @@ class BidController extends Controller
 
         $user->history()->create([
             'user_id' => $userId,
-            'result' => $rand,
             'value' => $value,
             'is_win' => $isWin,
         ]);
 
         return response()->json([
-            'rand' => $rand,
+            'value' => $value,
             'isWin' => $isWin,
         ]);
     }

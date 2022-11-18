@@ -16,7 +16,6 @@ class CreateHistoryTable extends Migration
         Schema::create('history', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->integer('result');
             $table->decimal('value');
             $table->boolean('is_win');
             $table->timestamps();

@@ -1,8 +1,7 @@
 <table class="table">
     <thead>
     <tr>
-        <th scope="col">Result</th>
-        <th scope="col">Value</th>
+        <th scope="col">Sum</th>
         <th scope="col">Action</th>
         <th scope="col">Date Time</th>
     </tr>
@@ -10,7 +9,6 @@
     <tbody>
     @foreach($history as $item)
         <tr>
-            <td>{{$item->result}}</td>
             <td>{{$item->value}}</td>
             <td>
                 @if($item->is_win)

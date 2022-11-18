@@ -35,9 +35,7 @@
                             <button class="btn btn-success" id="bid"
                                     data-user-id="{{$generated->user->id}}">{{__('Im feeling lucky')}}</button>
                         </div>
-                        <div class="d-flex justify-content-center pt-3">
-                            <div id="numberCircle">0</div>
-                        </div>
+                        <div id="bidResult" class="text-center mt-2 p-2"></div>
                     </div>
                 </div>
             </div>

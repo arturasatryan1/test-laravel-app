@@ -34,6 +34,7 @@ class HomeController extends Controller
             abort(404);
         }
         if ($generated->is_expired || $dateNow->gt($generated->expiry_date)) {
+            $generated->update(['is_expired' => true]);
             abort(419);
         }
 
